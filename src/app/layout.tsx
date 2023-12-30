@@ -23,17 +23,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={`${DEFAULT_FONT.className}`}>
-        <nav>
+        <header>
           <Image src={logo} alt="Auroras Madhouse Logo - A white unicorn with a blue mane and purple tail sat on a stool holding a cup of tea with the words Auroras Madhouse below" height={200} />
           <div className='logo-strip'>
             <Link href='https://aurorasmadhouse.etsy.com'>Visit our Store on <Image src={etsy} height={logoHeight} alt="Etsy Logo"  /></Link>
             <Link href='https://twitch.tv/aurorasmadhouse'>Join me on <Image src={twitch} height={logoHeight} alt="Twitch Logo" /></Link>
             <Link href='https://discord.gg/CWQ6xpTT2Q'>Chat with us on <Image src={discord} height={logoHeight} alt="Discord Logo" /></Link>
           </div>
-        </nav>
+        </header>
         {children}
       </body>
     </html>

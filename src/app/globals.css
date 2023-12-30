@@ -12,14 +12,26 @@ body {
   @apply max-w-screen-xl mx-auto min-h-screen px-10;
 }
 
-nav {
+header {
   @apply grid grid-cols-2 gap-10 items-center;
 }
 
-nav .logo-strip {
+header .logo-strip {
   @apply grid grid-cols-3 gap-20 text-center;
 }
 
-nav .logo-strip img {
+header .logo-strip img {
   @apply mx-auto mt-2;
+}
+
+nav {
+  @apply grid grid-cols-3 col-span-2 text-center gap-5;
+}
+
+nav a {
+  @apply border-b-2 border-gray-500 pb-2 hover:border-purple-700;
+}
+
+nav a.active {
+  @apply border-purple-500
 }
