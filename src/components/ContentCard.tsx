@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function ContentCard({project, primary}: {project: any, primary: boolean}) {
-    console.log(project.fields);
     return (
         <div className='text-center'>
             <strong className='mb-2'>{project.fields.title}</strong>
