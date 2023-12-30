@@ -13,5 +13,13 @@ body {
 }
 
 nav {
-  @apply flex gap-10 items-center;
+  @apply grid grid-cols-2 gap-10 items-center;
+}
+
+nav .logo-strip {
+  @apply grid grid-cols-3 gap-20 text-center;
+}
+
+nav .logo-strip img {
+  @apply mx-auto mt-2;
 }
